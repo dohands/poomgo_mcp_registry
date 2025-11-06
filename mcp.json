@@ -1,0 +1,25 @@
+{
+  "servers": [
+    {
+      "id": "github",
+      "name": "GitHub MCP",
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "auth": "orgToken"
+    },
+    {
+      "id": "context7",
+      "name": "Context7 MCP",
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp",
+      "auth": "orgToken"
+    },
+    {
+      "id": "notion",
+      "name": "Notion MCP",
+      "type": "http",
+      "url": "https://mcp.notion.com/mcp",
+      "auth": "orgToken"
+    }
+  ]
+}
