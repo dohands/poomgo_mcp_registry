@@ -2,30 +2,51 @@
   "servers": [
     {
       "server": {
-        "id": "github",
-        "name": "GitHub MCP",
-        "type": "http",
-        "url": "https://api.githubcopilot.com/mcp/",
-        "auth": "orgToken"
+        "name": "com.github",
+        "description": "GitHub MCP server providing access to repositories, issues, and pull requests.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "http",
+            "url": "https://mcp.github.com"
+          }
+        ]
       }
     },
     {
       "server": {
-        "id": "context7",
-        "name": "Context7 MCP",
-        "type": "http",
-        "url": "https://mcp.context7.com/mcp",
-        "auth": "orgToken"
+        "name": "ai.context7",
+        "description": "Context7 MCP server providing contextual knowledge APIs.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "http",
+            "url": "https://mcp.context7.ai"
+          }
+        ]
       }
     },
     {
       "server": {
-        "id": "notion",
-        "name": "Notion MCP",
-        "type": "http",
-        "url": "https://mcp.notion.com/mcp",
-        "auth": "orgToken"
+        "name": "com.notion",
+        "description": "Notion MCP server enabling Copilot to read and write Notion data.",
+        "version": "1.0.0",
+        "remotes": [
+          {
+            "type": "http",
+            "url": "https://mcp.notion.com"
+          }
+        ]
       }
     }
-  ]
+  ],
+  "_meta": {
+    "status": "active",
+    "publishedAt": "2025-11-08T00:00:00Z",
+    "isLatest": true
+  },
+  "metadata": {
+    "count": 3,
+    "nextCursor": null
+  }
 }
