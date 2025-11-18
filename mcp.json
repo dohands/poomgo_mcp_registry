@@ -1,4 +1,14 @@
 {
+  "version": "v1",
+  "agents": [
+    {
+      "id": "copilot-swe-agent",
+      "name": "GitHub Copilot SWE Agent",
+      "description": "Provides software engineering assistance.",
+      "type": "copilot-chat",
+      "skills": ["coding", "refactoring", "analysis"]
+    }
+  ],
   "servers": [
     {
       "server": {
