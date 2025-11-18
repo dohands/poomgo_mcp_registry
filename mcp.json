@@ -1,47 +1,41 @@
 {
-  "version": "v0",
-  "servers": [
-    {
-      "name": "com.github",
-      "description": "GitHub MCP server providing access to repositories, issues, and pull requests.",
-      "version": "1.0.0",
-      "remotes": [
-        {
-          "type": "http",
-          "url": "https://mcp.github.com"
-        }
-      ]
+  "server": {
+    "$schema": "https://modelcontextprotocol.io/schemas/server.json",
+    "name": "com.github",
+    "title": "GitHub MCP Server",
+    "description": "GitHub MCP server providing access to repositories, issues, and pull requests.",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/github/github-mcp-server"
     },
-    {
-      "name": "ai.context7",
-      "description": "Context7 MCP server providing contextual knowledge APIs.",
-      "version": "1.0.0",
-      "remotes": [
-        {
-          "type": "http",
-          "url": "https://mcp.context7.ai"
-        }
-      ]
-    },
-    {
-      "name": "com.notion",
-      "description": "Notion MCP server enabling Copilot to read and write Notion data.",
-      "version": "1.0.0",
-      "remotes": [
-        {
-          "type": "http",
-          "url": "https://mcp.notion.com"
-        }
-      ]
+    "version": "1.0.0",
+    "websiteUrl": "https://github.com/github/github-mcp-server",
+    "icons": [],
+    "packages": [
+      {
+        "type": "docker",
+        "name": "ghcr.io/github/github-mcp-server",
+        "version": "1.0.0"
+      }
+    ],
+    "remotes": [
+      {
+        "type": "http",
+        "url": "https://mcp.github.com"
+      }
+    ],
+    "_meta": {
+      "publisherProvided": {
+        "tags": ["internal", "github"]
+      }
     }
-  ],
-  "_meta": {
-    "status": "active",
-    "publishedAt": "2025-11-08T00:00:00Z",
-    "isLatest": true
   },
-  "metadata": {
-    "count": 3,
-    "nextCursor": null
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "publishedAt": "2025-11-08T00:00:00Z",
+      "updatedAt": "2025-11-18T00:00:00Z",
+      "isLatest": true
+    }
   }
 }
