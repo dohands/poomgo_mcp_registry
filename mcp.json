@@ -1,53 +1,38 @@
 {
   "version": "v0",
-  "agents": [
-    {
-      "id": "copilot-swe-agent",
-      "name": "GitHub Copilot SWE Agent",
-      "description": "Provides software engineering assistance.",
-      "type": "copilot-chat",
-      "skills": ["coding", "refactoring", "analysis"]
-    }
-  ],
   "servers": [
     {
-      "server": {
-        "name": "com.github",
-        "description": "GitHub MCP server providing access to repositories, issues, and pull requests.",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "http",
-            "url": "https://mcp.github.com"
-          }
-        ]
-      }
+      "name": "com.github",
+      "description": "GitHub MCP server providing access to repositories, issues, and pull requests.",
+      "version": "1.0.0",
+      "remotes": [
+        {
+          "type": "http",
+          "url": "https://mcp.github.com"
+        }
+      ]
     },
     {
-      "server": {
-        "name": "ai.context7",
-        "description": "Context7 MCP server providing contextual knowledge APIs.",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "http",
-            "url": "https://mcp.context7.ai"
-          }
-        ]
-      }
+      "name": "ai.context7",
+      "description": "Context7 MCP server providing contextual knowledge APIs.",
+      "version": "1.0.0",
+      "remotes": [
+        {
+          "type": "http",
+          "url": "https://mcp.context7.ai"
+        }
+      ]
     },
     {
-      "server": {
-        "name": "com.notion",
-        "description": "Notion MCP server enabling Copilot to read and write Notion data.",
-        "version": "1.0.0",
-        "remotes": [
-          {
-            "type": "http",
-            "url": "https://mcp.notion.com"
-          }
-        ]
-      }
+      "name": "com.notion",
+      "description": "Notion MCP server enabling Copilot to read and write Notion data.",
+      "version": "1.0.0",
+      "remotes": [
+        {
+          "type": "http",
+          "url": "https://mcp.notion.com"
+        }
+      ]
     }
   ],
   "_meta": {
