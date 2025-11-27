@@ -1,4 +1,5 @@
 {
+  "protocolVersion": "0.1",
   "servers": [
     {
       "server": {
@@ -39,6 +40,28 @@
         ]
       }
     }
+  ],
+  "agents": [
+    {
+      "agent": {
+        "name": "copilot-cloud-agent",
+        "description": "Default GitHub Copilot Agent for cloud-based interactions.",
+        "version": "1.0.0",
+        "servers": ["com.github"]
+      }
+    }
+    // 이전에 에러가 났던 'copilot-swe-agent'를 Organization에서 사용한다면 여기에 추가할 수 있습니다.
+    /*
+    ,
+    {
+      "agent": {
+        "name": "copilot-swe-agent",
+        "description": "GitHub Copilot Software Engineering Agent.",
+        "version": "1.0.0",
+        "servers": ["com.github"]
+      }
+    }
+    */
   ],
   "_meta": {
     "status": "active",
